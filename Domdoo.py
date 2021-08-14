@@ -20,7 +20,7 @@ def wishMe():
     if hour >= 0 and hour <12:
         speak("good morning sir")
     elif hour >12 and hour <18 :
-        speak("Good afternoon sir")
+        speak("good afternoon sir")
     else:
         speak("Good evening sir")
         
@@ -35,7 +35,7 @@ def takeCommand():
 
     try:
         print("Recognizing...")
-        query = r.recognize_google(audio, language = 'en-in')
+        query = r.recognize_google(audio, language = 'english')
         print("User said : " , query )
 
     except Exception as e:
